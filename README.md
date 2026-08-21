@@ -1,5 +1,5 @@
 # C--lib
-C-- Functions in C
+C - - Functions in C
 
 My Second Job is in C
 this is my Library for C
