@@ -336,11 +336,8 @@ void cmm_term_color(const char* color) {
     else if (strcmp(color, "0") == 0) printf("\033[0m");
 }
 
-void cmm_term_color_rgb(const char* r, const char* g, const char* b) {
-    int red = atoi(r);
-    int green = atoi(g);
-    int blue = atoi(b);
-    printf("\033[38;2;%d;%d;%dm", red, green, blue);
+void cmm_term_color_rgb(int r, int g, int b) {
+    printf("\033[38;2;%d;%d;%dm", r, g, b);
 }
 
 void cmm_term_color_hex(const char* hex) {
