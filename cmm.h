@@ -8,6 +8,15 @@
 #define CMM_CHAR 3
 #define CMM_BOOLEAN 4
 
+#define cmm_typeof(x) _Generic((x), \
+    int: "int", \
+    float: "float", \
+    char: "char", \
+    char*: "string", \
+    bool: "boolean", \
+    default: "unknown" \
+)
+
 // ===== output =====
 void cmm_say(const char* text);
 void cmm_say_bang(const char* text);
